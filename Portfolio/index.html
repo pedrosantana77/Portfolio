@@ -3,36 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="style.css">
+
+    <title>Portifólio | Pedro Henrique</title>
 </head>
-
 <body>
+    
     <header>
-        <h1>Port<span>folio</span></h1>
-        <nav>
-            <ul class="navegacao-primaria">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#resume">Resumo</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="init" id="init">
+            <div class="nome-nav">
+                <a href="#init">Pedro Henrique</a>
+            </div><!--nome navegação-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#init">Início</a></li>
+                    <li><a href="#isobre">Sobre</a></li>
+                    <li><a href="#iprojetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://wa.me/61983061302">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#init">Início</a></li>
+                        <li><a href="#isobre">Sobre</a></li>
+                        <li><a href="#iprojetos">Projetos</a></li>
+                        <li><a href="#https://wa.me/61983061302">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
     </header>
-    <hr>
-    <br>
-    <section aria-label="Seção curriculo download Pedro" class="section-div">
-        <div>
-            <h2>Olá! Eu sou Pedro Henrique</h2>
-            <h2 class="digitando">Desenvolvedor Front-End</h2>
-            <p>Sou Pedro Henrique, tenho 17 anos e estou cursando a area, de Desenvolvedor Front-End, na unidade SENAI Taguatinga, Confira abaixo meu minhas Especialidades</p>
-            <a href="#">dowload</a></div>
-            <img src="unnamed (1).jpg" alt= Ilustra imagem de um pessoa" style="circule">
-        
-    </section>
 
-    <script src="script.js"></script>
+    <main>
+        <section class="sobre" id="isobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/unnamed__1_-removebg-preview (1).png" alt="Foto de perfil">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre" id="isobre">
+                        <h2>OLÁ, <span>Sou Pedro Henrique</span></h2>
+                        <p class="digitando">Sou Pedro Henrique, tenho 17 anos e estou cursando a area, de Desenvolvedor Front-End, na unidade SENAI Taguatinga, 
+                        Confira abaixo meus Projetos!</p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/pedro.santanazzz/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/pedrosantana77"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/pedro-henrique-matias-santana-695362287/"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="projetos" id="iprojetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Em breve</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Em breve</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Em breve</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/pedro.santanazzz/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/pedrosantana77"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/pedro-henrique-matias-santana-695362287/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto: pedrohenriquematiassantana@gmail.com">pedrohenriquematiassantana@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
-
-</html> 
+</html>
